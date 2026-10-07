@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See The Locks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projet.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <span class="nav-prompt">&lt;_</span>
+      <img src="../assets/pixel/cicada.png" alt="cicada" class="nav-cicada">
+    </div>
+    <div class="nav-right">
+      <img src="../assets/pixel/nav_index.png" alt="" class="nav-icon">
+      <a href="#" class="nav-link nav-link-index">Index</a>
+      <img src="../assets/pixel/nav_contact.png" alt="" class="nav-icon">
+      <a href="../index.html#contact" class="nav-link">Contact</a>
+      <img src="../assets/pixel/nav_message.png" alt="" class="nav-icon">
+      <a href="../index.html#message" class="nav-link">Message</a>
+    </div>
+  </nav>
+
+  <!-- POPUP INDEX -->
+  <div class="index-popup" id="indexPopup">
+    <a href="../index.html">Accueil</a>
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#message">Message</a>
+    <a href="../index.html#apropos">A Propos</a>
+  </div>
+
+  <!-- PAGE PROJET -->
+  <main class="projet-page">
+
+    <!-- FRESQUE 3 images -->
+    <div class="fresque fresque-3">
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/STL - Accueil.png" alt="STL Accueil">
+      </div>
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/STL - Niveau en cours .png" alt="STL Niveau en cours">
+      </div>
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/STL - Validation.png" alt="STL Validation">
+      </div>
+    </div>
+
+    <!-- CONTENU -->
+    <div class="projet-content">
+
+      <div class="projet-header">
+        <img src="../assets/pixel/stl_icon.png" alt="STL" class="projet-page-icon">
+        <h1 class="projet-page-title">See The Locks</h1>
+      </div>
+
+      <div class="projet-tags">
+        <span class="tag">Next.js</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Pédagogie</span>
+        <span class="tag">Cryptographie</span>
+      </div>
+
+      <p class="projet-hook">
+        Apprendre la cryptographie en jouant — sans avoir besoin de coder.
+      </p>
+
+      <div class="projet-section">
+        <div class="projet-section-title">L'objectif</div>
+        <p>La crypto, c'est abstrait. STL transforme les concepts en niveaux interactifs avec validation par IA.</p>
+      </div>
+
+      <div class="projet-section">
+        <div class="projet-section-title">Blocs de contenu</div>
+        <ul class="projet-list">
+          <li>Stack : Next.js + React + TypeScript + Tailwind CSS</li>
+          <li>Déployé sur Vercel — accessible sans installation</li>
+          <li>Validation des réponses par LLM (sémantique, pas juste format)</li>
+          <li>Présenté en soutenance académique</li>
+        </ul>
+      </div>
+
+      <div class="projet-section">
+        <div class="projet-section-title">Difficulté</div>
+        <p>La validation IA était trop rigide — elle rejetait des bonnes réponses mal formulées. V2.0 vise une compréhension sémantique.</p>
+      </div>
+
+      <div class="projet-statut">
+        <span class="statut-label">Statut</span>
+        <span class="statut-value">V1.2 live — V2.0 en réflexion</span>
+      </div>
+
+    </div>
+
+    <!-- RETOUR -->
+    <div class="projet-retour">
+      <a href="../index.html#projets" class="retour-btn">
+        <img src="../assets/pixel/stl_icon.png" alt="retour" class="retour-icon">
+        <span>← Retour aux projets</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+  </div>
+
+  <script src="../js/projet.js"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

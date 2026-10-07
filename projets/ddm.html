@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDM — Dungeon Dice Monster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projet.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <span class="nav-prompt">&lt;_</span>
+      <img src="../assets/pixel/cicada.png" alt="cicada" class="nav-cicada">
+    </div>
+    <div class="nav-right">
+      <img src="../assets/pixel/nav_index.png" alt="" class="nav-icon">
+      <a href="#" class="nav-link nav-link-index">Index</a>
+      <img src="../assets/pixel/nav_contact.png" alt="" class="nav-icon">
+      <a href="../index.html#contact" class="nav-link">Contact</a>
+      <img src="../assets/pixel/nav_message.png" alt="" class="nav-icon">
+      <a href="../index.html#message" class="nav-link">Message</a>
+    </div>
+  </nav>
+
+  <!-- POPUP INDEX -->
+  <div class="index-popup" id="indexPopup">
+    <a href="../index.html">Accueil</a>
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#message">Message</a>
+    <a href="../index.html#apropos">A Propos</a>
+  </div>
+
+  <!-- PAGE PROJET -->
+  <main class="projet-page">
+
+    <!-- FRESQUE IMAGES -->
+    <div class="fresque fresque-3" id="fresque">
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/DDM - Plateau.png" alt="DDM Plateau">
+      </div>
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/DDM - Menu.png" alt="DDM Menu">
+      </div>
+      <div class="fresque-img" onclick="openLightbox(this)">
+        <img src="../assets/img/DDM - Benchmark.png" alt="DDM Benchmark">
+      </div>
+    </div>
+
+    <!-- CONTENU -->
+    <div class="projet-content">
+
+      <div class="projet-header">
+        <img src="../assets/pixel/ddm_icon.png" alt="DDM" class="projet-page-icon">
+        <h1 class="projet-page-title">Dungeon Dice Monster</h1>
+      </div>
+
+      <div class="projet-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Json</span>
+        <span class="tag">PyGame</span>
+      </div>
+
+      <p class="projet-hook">
+        Un jeu de combat tactique au tour par tour avec un moteur RL qui apprend à jouer contre toi.
+      </p>
+
+      <div class="projet-section">
+        <div class="projet-section-title">L'objectif</div>
+        <p>Créer un jeu équilibré sans testeur humain.<br>
+        La solution : des agents RL qui jouent 10 000+ parties pour détecter les déséquilibres.</p>
+      </div>
+
+      <div class="projet-section">
+        <div class="projet-section-title">Blocs de contenu</div>
+        <ul class="projet-list">
+          <li>Plateau en grille, dés + cartes, 2 joueurs</li>
+          <li>Agents RL pour simulation et équilibrage automatique</li>
+          <li>Frontend Pygame en développement (perspective hybride validée)</li>
+          <li>Patches validés : taux de nul 32%→19%, symétrie A/B 40/41%</li>
+        </ul>
+      </div>
+
+      <div class="projet-section">
+        <div class="projet-section-title">Difficulté</div>
+        <p>Déboguer un bug d'équilibre sans pouvoir "voir" les 10 000 parties. Tout passe par les stats.</p>
+      </div>
+
+      <div class="projet-statut">
+        <span class="statut-label">Statut</span>
+        <span class="statut-value">Moteur stable v0.4 — baseline gelée — Deep RL à venir</span>
+      </div>
+
+    </div>
+
+    <!-- RETOUR -->
+    <div class="projet-retour">
+      <a href="../index.html#projets" class="retour-btn">
+        <img src="../assets/pixel/ddm_icon.png" alt="retour" class="retour-icon">
+        <span>← Retour aux projets</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+  </div>
+
+  <script src="../js/projet.js"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

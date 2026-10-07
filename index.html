@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arno Delort — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <span class="nav-prompt">&lt;_</span>
+      <img src="assets/pixel/cicada.png" alt="cicada" class="nav-cicada">
+    </div>
+    <div class="nav-right">
+      <img src="assets/pixel/nav_index.png" alt="" class="nav-icon">
+      <a href="assets/CV.pdf" class="nav-link" download>CV</a>
+      <a href="#projets" class="nav-link">Index</a>
+      <img src="assets/pixel/nav_contact.png" alt="" class="nav-icon">
+      <a href="#contact" class="nav-link">Contact</a>
+      <img src="assets/pixel/nav_message.png" alt="" class="nav-icon">
+      <a href="#message" class="nav-link">Message</a>
+    </div>
+  </nav>
+
+
+  <!-- POPUP INDEX -->
+<div class="index-popup" id="indexPopup">
+  <a href="#" onclick="scrollToTop()">Accueil</a>
+  <a href="#projets">Projets</a>
+  <a href="#contact">Contact</a>
+  <a href="#message">Message</a>
+  <a href="#apropos">A Propos</a>
+</div>
+
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="tracker-grid" id="trackerGrid"></div>
+
+    <div class="hero-layout">
+
+      <!-- BASH -->
+      <div class="hero-bash" id="heroBash">
+        <div class="bash-header">arno@portfolio:~$</div>
+        <div class="bash-lines" id="bashLines"></div>
+      </div>
+
+      <!-- TERMINAL -->
+      <div class="hero-terminal" id="heroTerminal">
+        <div class="term-bar">
+          <span>arno@portfolio:~/hero</span>
+          <span>─ □ ×</span>
+        </div>
+        <div class="term-body" id="termBody">
+          <div class="term-name" id="termName"></div>
+          <div class="term-output" id="termOutput"></div>
+          <div class="cicada-ascii" id="cicadaAscii">
+  ░▓▓▓▓▓▓▓░
+ ▓◉░░░░░◉▓
+ ▓░█████░▓
+  ▓▓███▓▓
+ ░▓░░░░░▓░
+ ▓░░███░░▓
+░▓░░░░░░░▓░
+ ░▓▓▓▓▓▓▓░</div>
+        </div>
+      </div>
+
+      <!-- GLOSSAIRE -->
+      <div class="hero-gloss" id="heroGloss">
+        <div class="gloss-block" id="glossBlock"></div>
+      </div>
+
+    </div>
+
+    <!-- WDK -->
+    <div class="hero-wdk" id="heroWdk">
+      <span class="wdk-label">// ID</span>
+      <div class="wdk-sep"></div>
+      <div class="wdk-text" id="wdkText">We Don't Know</div>
+    </div>
+
+  </section>
+
+  <!-- PROJETS -->
+  <section class="projets" id="projets">
+    <div class="section-label">Projets</div>
+    <div class="projets-list">
+
+      <div class="projet-item" data-target="ddm">
+        <div class="projet-info">
+          <h2 class="projet-title">Dungeon Dice Monster</h2>
+          <div class="projet-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Json</span>
+            <span class="tag">PyGame</span>
+          </div>
+          <p class="projet-desc">Moteur de jeu python d'un jeu de combat tactique dans un univers fantasy, </p>
+          <p class="projet-desc">au tour par tour pour deux joueurs sur un plateau en grille.</p>
+        </div>
+        <div class="projet-icon">
+          <img src="assets/pixel/ddm_icon.png" alt="DDM">
+        </div>
+      </div>
+
+      <div class="projet-item" data-target="stl">
+        <div class="projet-info">
+          <h2 class="projet-title">See The Locks</h2>
+          <div class="projet-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <p class="projet-desc">App web pédagogique sur la cryptographie.</p>
+        </div>
+        <div class="projet-icon">
+          <img src="assets/pixel/stl_icon.png" alt="STL">
+        </div>
+      </div>
+
+      <div class="projet-item" data-target="helios">
+        <div class="projet-info">
+          <h2 class="projet-title">Eco_Tracker_IA (Helios)</h2>
+          <div class="projet-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Vue.js</span>
+          </div>
+          <p class="projet-desc">Dashboard web qui estime la consommation énergétique des requêtes IA </p>
+          <p class="projet-desc">de l'utilisateur et la convertit en équivalences concrètes.</p>
+        </div>
+        <div class="projet-icon">
+          <img src="assets/pixel/helios_icon.png" alt="Helios">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="cmd-window">
+      <div class="cmd-bar">
+        <span>CMD</span>
+        <span class="cmd-controls">-□×</span>
+      </div>
+      <div class="cmd-body">
+        <p>C:\&gt; dir contacts</p>
+        <p>Mail&nbsp;&nbsp;&nbsp;&nbsp;: <a href="mailto:arno.dlt@pm.me" class="cmd-link">arno.dlt@pm.me</a></p>
+        <p>GitHub&nbsp;&nbsp;: <a href="https://github.com/NaxxoD" class="cmd-link" target="_blank" rel="noopener">github.com/NaxxoD</a></p>
+        <p>CV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="assets/CV.pdf" class="cmd-link" download>télécharger (PDF)</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <section class="message" id="message">
+    <div class="ps-window">
+      <div class="ps-bar">
+        <span>Power Shell</span>
+        <span class="ps-controls">-□×</span>
+      </div>
+      <div class="ps-body">
+        <p>PS C:\&gt; New-Item -Message</p>
+        <div class="ps-form">
+          <div class="ps-field">
+            <span class="ps-label">-From&nbsp;&nbsp;: [</span>
+            <input type="email" id="inputMail" class="ps-input" placeholder="Votre mail"><span>]</span>
+          </div>
+          <div class="ps-field">
+            <span class="ps-label">-Sujet&nbsp;: [</span>
+            <input type="text" id="inputSujet" class="ps-input" placeholder="Votre sujet"><span>]</span>
+          </div>
+          <div class="ps-field">
+            <span class="ps-label">-Corps :</span>
+          </div>
+          <div class="ps-field">
+            <span>[</span>
+            <textarea id="inputMessage" class="ps-textarea" placeholder="Votre message..."></textarea><span>]</span>
+          </div>
+          <div class="ps-field">
+            <button class="ps-btn" id="sendBtn">[ Envoyer ]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="apropos" id="apropos">
+    <div class="apropos-inner">
+      <h2 class="apropos-title">À propos</h2>
+      <p class="apropos-text">
+        Reconversion volontaire vers l'IT après 12 ans en restauration.<br>
+        Attiré par le développement en general, la sécurité des systèmes et la rigueur technique qu'elle exige.<br>
+        Je développe en parallèle de ma formation une méthode autonome de l'analyse de vulnérabilités et des bonnes pratiques de développement sécurisé.
+      </p>
+      <p class="apropos-interets">Centres d'intérêt :\&gt; Jeux vidéo | Mangas | Basket | Musique</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-prompt">_&gt;</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
